@@ -4,7 +4,7 @@ this repository is a first contact with golang doing an employee CRUD. Based on 
 Taking as a persistence system a mySQL date base and developing using Xampp. And to make the process more agile, bootstrap is used for the UI.
 
 ## How to run
-Download Xampp if you don't have it installed yet at [official Xampp website](https://www.apachefriends.org/es/download.html) and run the apache and MySQL services.
+Download Xampp if you don't have it installed yet, download it at [official Xampp website](https://www.apachefriends.org/es/download.html) and run the apache and MySQL services.
 
 
 move to the app directoy
