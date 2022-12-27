@@ -1,0 +1,44 @@
+{{ define "inicio" }}
+<!doctype html>
+<html lang="en">
+  {{ template "header"}}
+  <body>
+    
+    {{ template "navbar" }}
+
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+        {{ range. }}
+
+          <tr>
+            <th scope="row"> {{ .Id }} </th>
+            <td>{{ .Id }}</td>
+            <td>{{ .Name }}</td>
+            <td>{{ .Email }}</td>
+            <td>
+              <a name="" id="" class="btn btn-warning" href="/edit?id={{.Id}}" role="button">Edit</a>
+              | 
+              <a name="" id="" class="btn btn-danger" href="/remove?id={{.Id}}" role="button">Remove</a>
+            </td>
+          </tr>
+
+        {{ end }}
+        </tbody>
+      </table>
+    </div>
+
+
+  {{template "footer"}}
+  </body>
+</html>
+{{ end }}

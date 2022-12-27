@@ -1,0 +1,31 @@
+{{define "create"}}
+<!doctype html>
+<html lang="en">
+{{template "header"}}
+<body>
+{{ template "navbar" }}
+
+<div class="card">
+  <div class="card-body">
+    <h2>Employees</h2>
+    <form method="post" action="/insert">
+        
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" name="email" class="form-control" id="email">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+  </div>
+</div>
+
+{{template "footer"}}
+</body>
+</html>
+{{ end }}
